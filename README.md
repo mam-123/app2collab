@@ -2,16 +2,16 @@
 
 Ini adalah projek sederhana untuk belajar kolaborasi menggunakan Git & Android Studio
 
-#Tim
+## 👥 Tim
 Imam Maulana Malik : Inisialisasi & Merge PR
 Chyntia Fitri Ramadhani : Fitur TextView
 Anzilul Nur Rohma : Fitur Button
 
-#Fitur
+## 📱 Fitur
 Menampilkan TextView
 Menampilkan button yang dapat diklik
 
-#Teknologi
+## 🔧 Teknologi
 -Kotlin
 Kotlin adalah bahasa pemrograman yang dikembangkan oleh JetBrains dan didukung oleh Google untuk pengembangan aplikasi Android.
 -Android Studio
@@ -19,7 +19,7 @@ Android Studio adalah lingkungan pengembangan terpadu (IDE) resmi untuk pengemba
 -Git & Github
 Git adalah alat yang mengelola perubahan kode di komputer kita secara lokal, sedangkan GitHub adalah layanan online yang digunakan untuk menyimpan kode secara cloud.
 
-#Penjelasan Code Penting
+## 📸 Penjelasan code penting
 <img width="1185" height="556" alt="main activity" src="https://github.com/user-attachments/assets/67398935-e23e-46a6-9049-36da40627adf" />
 
 Foto diatas adalah MainActivity, ini activity utama yang nampilin halaman depan, dan udah disiapin biar tampilannya rapi dan nggak ketutupan elemen sistem HP
@@ -41,5 +41,5 @@ Ini adalah tampilan untuk form biodata siswa, di mana user bisa input nama dan k
 Layout ini untuk halaman Splash Screen yang muncul saat aplikasi baru dibuka, sambil menunjukkan logo SMK dan loading spinner (ProgressBar).
 
 
-#Screenshot
+## 📸 Screenshot
 ![WhatsApp Image 2025-07-30 at 13 39 16](https://github.com/user-attachments/assets/25a0c5c1-67e9-4345-8a78-ae6124fff7cf)
