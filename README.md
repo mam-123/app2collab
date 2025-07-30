@@ -1,15 +1,19 @@
-#Project Kolaborasi Android
+#  Project Kolaborasi Android
 
 Ini adalah projek sederhana untuk belajar kolaborasi menggunakan Git & Android Studio
 
 ## 👥 Tim
 Imam Maulana Malik : Inisialisasi & Merge PR
+
 Chyntia Fitri Ramadhani : Fitur TextView
+
 Anzilul Nur Rohma : Fitur Button
 
 ## 📱 Fitur
 Menampilkan TextView
-Menampilkan button yang dapat diklik
+
+Menampilkan Button yang bisa diklik
+
 
 ## 🔧 Teknologi
 -Kotlin
@@ -20,26 +24,50 @@ Android Studio adalah lingkungan pengembangan terpadu (IDE) resmi untuk pengemba
 Git adalah alat yang mengelola perubahan kode di komputer kita secara lokal, sedangkan GitHub adalah layanan online yang digunakan untuk menyimpan kode secara cloud.
 
 ## 📸 Penjelasan code penting
-<img width="1185" height="556" alt="main activity" src="https://github.com/user-attachments/assets/67398935-e23e-46a6-9049-36da40627adf" />
+Handler(Looper.getMainLooper()).postDelayed({
+    startActivity(Intent(this, MainActivity::class.java))
+    finish()
+}, 3000)
 
-Foto diatas adalah MainActivity, ini activity utama yang nampilin halaman depan, dan udah disiapin biar tampilannya rapi dan nggak ketutupan elemen sistem HP
+╰┈➤Fungsi: Menampilkan splash screen selama 3 detik, lalu berpindah ke MainActivity.
 
-<img width="1083" height="730" alt="activity splash 3" src="https://github.com/user-attachments/assets/ab11f16c-211f-4b99-937d-6041845fcf32" />
+ProgressBar:
 
-Foto diatas adalah splashscreen Kode ini membuat splash screen. Yaitu tampilan awal saat aplikasi baru dibuka, ini tampil selama 3 detik, lalu langsung pindah ke halaman utama
+╰┈➤Fungsi: Tanda aplikasi sedang loading saat splash screen tampil. 
 
-<img width="1223" height="835" alt="activity main 1" src="https://github.com/user-attachments/assets/672961fa-a9d9-4362-bad8-1ff07307c956" />
-<img width="709" height="566" alt="activity main 2" src="https://github.com/user-attachments/assets/17fd476b-f908-443c-9cf1-7dbd547883fe" />
-<img width="656" height="645" alt="activity main 3" src="https://github.com/user-attachments/assets/387ababb-4dd1-4839-beef-2d3ec98a94a8" />
+setContentView(R.layout.activity_main)
 
-Ini adalah tampilan untuk form biodata siswa, di mana user bisa input nama dan kelas, lalu tekan tombol "Tampilkan", dan hasilnya akan muncul di bawahnya.
+╰┈➤Fungsi: Menentukan layout yang digunakan yaitu activity_main.xml.
 
-<img width="810" height="718" alt="activity splash 1" src="https://github.com/user-attachments/assets/b6409ab7-2c21-467f-bca0-7c2d02d73a16" />
-<img width="703" height="504" alt="activity splash 2" src="https://github.com/user-attachments/assets/9af1c4a8-92a4-4f3c-804b-9cd280df1428" />
-<img width="1083" height="730" alt="activity splash 3" src="https://github.com/user-attachments/assets/f9b33495-1e78-4ccc-8e22-b939cc6fb6f9" />
+import android.content.Intent
 
-Layout ini untuk halaman Splash Screen yang muncul saat aplikasi baru dibuka, sambil menunjukkan logo SMK dan loading spinner (ProgressBar).
+import android.os.Bundle
 
+import android.os.Handler
 
+import android.os.Looper
+
+import androidx.appcompat.app.AppCompatActivity
+
+╰┈➤Digunakan agar kita bisa memakai class penting seperti Intent (pindah halaman), Handler (delay), dan AppCompatActivity (activity dasar Android).
+
+Button
+
+    android:id="@+id/btnTampilkan"
+    
+    android:text="Tampilkan"
+    
+╰┈➤Ketika ditekan, akan memproses input dan menampilkan hasilnya.
+
+EditText etNama & etKelas
+
+╰┈➤Fungsi: Tempat input nama dan kelas
+
+TextView tvHasil
+
+╰┈➤Fungsi: Menampilkan hasil input nama dan kelas.
 ## 📸 Screenshot
-![WhatsApp Image 2025-07-30 at 13 39 16](https://github.com/user-attachments/assets/25a0c5c1-67e9-4345-8a78-ae6124fff7cf)
+![WhatsApp Image 2025-07-30 at 18 58 05](https://github.com/user-attachments/assets/bc757972-80a3-4323-a451-8b45e3739a8e)
+![WhatsApp Image 2025-07-30 at 18 58 06](https://github.com/user-attachments/assets/11b6e431-5442-4f34-8b7c-82890416d8e9)
+
+
